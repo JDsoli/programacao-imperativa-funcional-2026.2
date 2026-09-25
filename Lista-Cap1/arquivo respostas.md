@@ -149,8 +149,8 @@ Este é o resultado da saída exata gerada no console:
 
 Saída:
 
-```
-"Primeiro programa"Pressione qualquer tecla para continuar. . .
+
+Primeiro programa"Pressione qualquer tecla para continuar. . .
 
 ---------------------------------------------------
 

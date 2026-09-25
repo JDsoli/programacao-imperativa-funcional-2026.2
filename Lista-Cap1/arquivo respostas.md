@@ -290,3 +290,49 @@ d) printf "Primeiro programa" ; — Esta instrução é inválida em C pois a ch
 
 O que essas variações demonstram:
 Essas variações demonstram que o compilador C é uma linguagem de **formato livre** em relação a espaços em branco, tabulações e quebras de linha fora das strings literais. O compilador ignora o número de espaços entre o nome da função, os parênteses e o argumento fornecido, permitindo flexibilidade de estilo sem alterar o significado do código, desde que a estrutura sintática necessária (como os parênteses e o ponto e vírgula) seja mantida.
+
+-----------------------------------------------------------
+
+Questão:21
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Treinamento em programacao.\nLinguagem C.\n");
+
+    system("PAUSE");
+    return 0;
+}
+---
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Treinamento em programacao.\n");
+    printf("Linguagem C.\n");
+
+    system("PAUSE");
+    return 0;
+}
+
+--
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("\xC9\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBB\n");
+    printf("\xBA Treinamento em programacao. \xBA\n");
+    printf("\xBA Linguagem C.                \xBA\n");
+    printf("\xC8\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBC\n");
+
+    system("PAUSE");
+    return 0;
+}
+
+------------------------------------------------
+
